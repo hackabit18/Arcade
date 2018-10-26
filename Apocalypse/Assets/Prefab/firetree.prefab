@@ -39,9 +39,11 @@ GameObject:
   - component: {fileID: 212200953007524000}
   - component: {fileID: 95341451361389086}
   - component: {fileID: 61542457511521412}
+  - component: {fileID: 114544834430371838}
+  - component: {fileID: 114045472233087912}
   m_Layer: 0
   m_Name: fireMan
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +87,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.69, y: -0.16}
+  m_Offset: {x: -0.42, y: -0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -96,7 +98,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.23, y: 6.48}
+  m_Size: {x: 4.81, y: 6.48}
   m_EdgeRadius: 0
 --- !u!95 &95341451361389086
 Animator:
@@ -134,6 +136,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114045472233087912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571505051628816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c674c1a858042aa4d9db33d776af88b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114544834430371838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571505051628816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90739ccc21d1ef645894b90b47702622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1310754952003740, guid: 5c80d4fd1a58dbc42b96649ff7cb9713, type: 2}
+  rb: {fileID: 212200953007524000}
 --- !u!212 &212118510527102866
 SpriteRenderer:
   m_ObjectHideFlags: 1
