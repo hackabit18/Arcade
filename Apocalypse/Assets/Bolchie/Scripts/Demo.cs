@@ -11,6 +11,9 @@ using UnityEngine.SceneManagement;
 
 public class Demo : MonoBehaviour {
 
+    public GameObject BulletEmitter;
+    public GameObject Bullet;
+
 	//variable for how fast player runs//
 	private float speed = 5f;
     public Vector3 position;
@@ -88,7 +91,10 @@ public class Demo : MonoBehaviour {
 			{
 			attack = false;
 			anim.SetBool ("Attack", false);
-			}
+            //The Bullet instantiation happens here.
+            GameObject Temporary_Bullet_Handler;
+            Temporary_Bullet_Handler = Instantiate(Bullet, BulletEmitter.transform.position, BulletEmitter.transform.rotation) as GameObject;
+        }
 
 		if (grounded && Input.GetKeyDown(KeyCode.Space) && !dead)
 		{
@@ -99,22 +105,27 @@ public class Demo : MonoBehaviour {
 		//dead animation for testing//
 		if (Input.GetKeyDown (KeyCode.Z)) 
 		{
-			if (!dead) {
-				anim.SetBool ("Dead", true);
-				anim.SetFloat ("Speed", 0);
-				dead = true;
-			} else {
-					anim.SetBool ("Dead", false);
-					dead = false;
-				}
+            Die();
 		}
 	}
-		
+
+    public void Die()
+    {
+        if (!dead)
+        {
+            anim.SetBool("Dead", true);
+            anim.SetFloat("Speed", 0);
+            dead = true;
+        }
+        else
+        {
+            anim.SetBool("Dead", false);
+            dead = false;
+        }
+    }
 	private void Flip (float horizontal)
 	{
 			facingRight = !facingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
+        transform.Rotate(0f, 180f, 0f);
 	}
 }

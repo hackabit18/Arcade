@@ -379,6 +379,17 @@ Prefab:
       propertyPath: m_Size.x
       value: 1.73
       objectReference: {fileID: 0}
+    - target: {fileID: 114393563242933454, guid: d58e58070863f4a4e9a88c181489ff86,
+        type: 2}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 1856330497283428, guid: 37cb85a349f08fa4b8ad72c3377203b0,
+        type: 2}
+    - target: {fileID: 114393563242933454, guid: d58e58070863f4a4e9a88c181489ff86,
+        type: 2}
+      propertyPath: BulletEmitter
+      value: 
+      objectReference: {fileID: 1661619604}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d58e58070863f4a4e9a88c181489ff86, type: 2}
   m_IsPrefabAsset: 0
@@ -1512,6 +1523,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4664901637855620, guid: bb69a6de1be2fef4fb51079e400836a6,
     type: 2}
   m_PrefabInternal: {fileID: 1252063713}
+--- !u!1 &1661619604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661619605}
+  m_Layer: 0
+  m_Name: Bullet Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661619605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661619604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.097768, y: -1.52, z: -0.08246813}
+  m_LocalScale: {x: 1.774442, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1896096085}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1867563702
 Prefab:
   m_ObjectHideFlags: 0
