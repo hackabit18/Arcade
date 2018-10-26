@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 212106771619070684}
   - component: {fileID: 95580340109708184}
   - component: {fileID: 61196648946798084}
-  - component: {fileID: 114009250650589574}
-  - component: {fileID: 114159298735043176}
   m_Layer: 0
   m_Name: AxeEnemy
   m_TagString: enemy
@@ -147,30 +145,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114009250650589574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073536657932370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90739ccc21d1ef645894b90b47702622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1310754952003740, guid: 5c80d4fd1a58dbc42b96649ff7cb9713, type: 2}
-  rb: {fileID: 212106771619070684}
---- !u!114 &114159298735043176
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073536657932370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c674c1a858042aa4d9db33d776af88b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212106771619070684
 SpriteRenderer:
   m_ObjectHideFlags: 1
