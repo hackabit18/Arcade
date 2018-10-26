@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 //Basic Player Script//
 //controls: 
 //A, D, Left, Right to move
@@ -13,16 +13,19 @@ public class Demo : MonoBehaviour {
 
 	//variable for how fast player runs//
 	private float speed = 5f;
-
-	private bool facingRight = true;
+    public Vector3 position;
+    private bool facingRight = true;
 	private Animator anim;
 	bool grounded = false;
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
+    public bool Xminenabled = false;
+    public float Xminvalue = 0;
 
-	//variable for how high player jumps//
-	[SerializeField]
+
+    //variable for how high player jumps//
+    [SerializeField]
 	private float jumpForce = 300f;
 
 	public Rigidbody2D rb { get; set; }
@@ -31,6 +34,7 @@ public class Demo : MonoBehaviour {
 	bool attack = false;
 
 	void Start () {
+         position = transform.position;
 		GetComponent<Rigidbody2D> ().freezeRotation = true;
 		rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponentInChildren<Animator> ();
@@ -40,10 +44,15 @@ public class Demo : MonoBehaviour {
 	void Update()
 	{
 		HandleInput ();
-	}
+        position = transform.position;
+        position.x = Mathf.Clamp(position.x, Xminvalue, position.x);
+        position.y = Mathf.Clamp(position.y, -3.69f, 3.1f);
+        transform.position = position;
 
-	//movement//
-	void FixedUpdate ()
+    }
+
+    //movement//
+    void FixedUpdate ()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
@@ -61,7 +70,8 @@ public class Demo : MonoBehaviour {
 
 		else if (horizontal < 0 && facingRight && !dead && !attack){
 			Flip (horizontal);
-		}
+            Xminvalue = transform.position.x - 7.5f;
+        }
 	}
 
 	//attacking and jumping//
