@@ -8,14 +8,14 @@ public class Bullet : MonoBehaviour
 
     // public GameObject enemy;
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
         rb.velocity = transform.right * speed;
         Destroy(gameObject, 2.0f);
     }
 
-   /* void OnCollisionEnter2D(Collision2D collider)
+    void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.gameObject.CompareTag("enemy"))
         {
@@ -30,11 +30,11 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
 
 
-        }*/
+        }
 
 
     }
 
 
-
+}
 
