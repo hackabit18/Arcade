@@ -7,7 +7,8 @@ public class Main_menu : MonoBehaviour {
 	
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Forest_scene");
         if(Time.timeScale==0)
         {
             Time.timeScale = 1;
