@@ -9,6 +9,7 @@ TagManager:
   - bullet
   - bush
   - empty
+  - water
   layers:
   - Default
   - TransparentFX

@@ -13,9 +13,9 @@ public class Demo : MonoBehaviour {
 
     public GameObject BulletEmitter;
     public GameObject Bullet;
-
-	//variable for how fast player runs//
-	private float speed = 5f;
+    public int counter = 0;
+    //variable for how fast player runs//
+    private float speed = 5f;
     public Vector3 position;
     private bool facingRight = true;
 	private Animator anim;
@@ -112,7 +112,29 @@ public class Demo : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.gameObject.CompareTag("enemy"))
-        { Die(); }
+        {
+            Debug.Log("player dead");
+            Die();
+        }
+
+        if (collider.gameObject.CompareTag("seed"))
+        {
+            counter += 10;
+            Debug.Log(counter);
+
+        }
+        if (collider.gameObject.CompareTag("bush"))
+        {
+            counter -= 10;
+            Debug.Log(counter);
+
+        }
+        if (collider.gameObject.CompareTag("water"))
+        {
+            Debug.Log("player dead");
+            Die();
+        }
+        PlayerPrefs.SetString("finalcount", counter.ToString());
     }
 
     public void Die()
@@ -125,7 +147,7 @@ public class Demo : MonoBehaviour {
             Time.timeScale = 0;
 
             Destroy(gameObject);
-          //  SceneManager.LoadScene("Game_over");
+            SceneManager.LoadScene("Quit_scene");
         }
         else
         {
