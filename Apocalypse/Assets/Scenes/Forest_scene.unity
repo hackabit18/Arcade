@@ -1462,6 +1462,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.166
       objectReference: {fileID: 0}
+    - target: {fileID: 1571505051628816, guid: 3f49583993f57964db8da6cf1a22e4c6, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f49583993f57964db8da6cf1a22e4c6, type: 2}
   m_IsPrefabAsset: 0
@@ -6333,6 +6337,10 @@ Prefab:
         type: 2}
       propertyPath: m_Offset.y
       value: -1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269399473314560, guid: 72ddfe844f8a6e0459ab286e6d8d28b8, type: 2}
+      propertyPath: m_TagString
+      value: big_seed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ddfe844f8a6e0459ab286e6d8d28b8, type: 2}
