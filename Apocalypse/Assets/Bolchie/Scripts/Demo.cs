@@ -153,7 +153,7 @@ public class Demo : MonoBehaviour {
             dead = true;
             Time.timeScale = 0;
 
-            Destroy(gameObject);
+            Destroy(gameObject,1f);
             SceneManager.LoadScene("Quit_scene");
         }
         else
