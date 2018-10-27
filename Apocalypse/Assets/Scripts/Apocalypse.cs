@@ -22,6 +22,11 @@ public class Apocalypse : MonoBehaviour {
         SceneManager.LoadScene("Menu_scene");
 
     }
+    public void City()
+    {
+        SceneManager.LoadScene("City_scene");
+
+    }
 
 
 }
