@@ -11,6 +11,7 @@ TagManager:
   - empty
   - water
   - big_seed
+  - car_enemy
   layers:
   - Default
   - TransparentFX
