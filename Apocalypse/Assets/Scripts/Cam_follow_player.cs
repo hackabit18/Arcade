@@ -46,7 +46,7 @@ public class Cam_follow_player : MonoBehaviour
         else if (Xmaxenabled)
             targetpos.x = Mathf.Clamp(target.position.x, target.position.x, Xmaxvalue);
         targetpos.z = transform.position.z;
-        targetpos.y = lockPos+0.3f;
+        targetpos.y = lockPos;
         transform.position = Vector3.SmoothDamp(transform.position, targetpos, ref velocity, smoothtime);
     }
 
