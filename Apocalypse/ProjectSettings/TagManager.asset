@@ -12,6 +12,7 @@ TagManager:
   - water
   - big_seed
   - car_enemy
+  - bulb
   layers:
   - Default
   - TransparentFX
