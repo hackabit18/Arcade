@@ -15,6 +15,7 @@ public class Cam_follow_player : MonoBehaviour
     }
    
     public Transform target;
+    public float ypos = 0.3f;
     Vector3 velocity = Vector3.zero;
     public float smoothtime = .15f;
     public bool Xmaxenabled = false;
@@ -46,7 +47,7 @@ public class Cam_follow_player : MonoBehaviour
         else if (Xmaxenabled)
             targetpos.x = Mathf.Clamp(target.position.x, target.position.x, Xmaxvalue);
         targetpos.z = transform.position.z;
-        targetpos.y = lockPos+0.3f;
+        targetpos.y = lockPos+ypos;
         transform.position = Vector3.SmoothDamp(transform.position, targetpos, ref velocity, smoothtime);
     }
 
