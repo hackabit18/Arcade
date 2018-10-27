@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 212200953007524000}
   - component: {fileID: 95341451361389086}
   - component: {fileID: 61542457511521412}
+  - component: {fileID: 114469514086243054}
+  - component: {fileID: 114932904686696712}
   m_Layer: 0
   m_Name: fireMan
   m_TagString: Untagged
@@ -134,6 +136,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114469514086243054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571505051628816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b96902f3208054dbe1a6c3bd8a3d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4761555876135114, guid: 14fdbbe18b3179a409ddc1d0e2f768d0, type: 2}
+  rb: {fileID: 212200953007524000}
+--- !u!114 &114932904686696712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571505051628816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cabf27b29fd0640a3757f9438f1213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212118510527102866
 SpriteRenderer:
   m_ObjectHideFlags: 1

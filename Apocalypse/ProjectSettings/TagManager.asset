@@ -8,6 +8,7 @@ TagManager:
   - seed
   - bullet
   - bush
+  - empty
   layers:
   - Default
   - TransparentFX

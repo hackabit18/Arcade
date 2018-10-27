@@ -109,6 +109,12 @@ public class Demo : MonoBehaviour {
 		}
 	}
 
+    private void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.gameObject.CompareTag("enemy"))
+        { Die(); }
+    }
+
     public void Die()
     {
         if (!dead)
@@ -116,6 +122,10 @@ public class Demo : MonoBehaviour {
             anim.SetBool("Dead", true);
             anim.SetFloat("Speed", 0);
             dead = true;
+            Time.timeScale = 0;
+
+            Destroy(gameObject);
+          //  SceneManager.LoadScene("Game_over");
         }
         else
         {

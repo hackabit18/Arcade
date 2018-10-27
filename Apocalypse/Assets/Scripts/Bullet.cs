@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 2.0f);
     }
 
-   /* void OnCollisionEnter2D(Collision2D collider)
+    void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.gameObject.CompareTag("enemy"))
         {
@@ -30,10 +30,11 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
 
 
-        }*/
+        }
 
 
     }
+}
 
 
 
