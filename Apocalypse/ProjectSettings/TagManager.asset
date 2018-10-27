@@ -10,6 +10,7 @@ TagManager:
   - bush
   - empty
   - water
+  - big_seed
   layers:
   - Default
   - TransparentFX

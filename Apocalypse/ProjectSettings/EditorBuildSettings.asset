@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quit_scene.unity
     guid: 1dbbfab9c814ec3448095495873fdf03
+  - enabled: 1
+    path: Assets/Scenes/Info_scene.unity
+    guid: 9ebfbf4eba080a44fb4c26141747eb1c
   m_configObjects: {}

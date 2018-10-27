@@ -49,7 +49,7 @@ public class Demo : MonoBehaviour {
 		HandleInput ();
         position = transform.position;
         position.x = Mathf.Clamp(position.x, Xminvalue, position.x);
-        position.y = Mathf.Clamp(position.y, -3.69f, 3.1f);
+        position.y = Mathf.Clamp(position.y, -3.6f, 4.98f);
         transform.position = position;
 
     }
@@ -134,6 +134,13 @@ public class Demo : MonoBehaviour {
             Debug.Log("player dead");
             Die();
         }
+        if (collider.gameObject.CompareTag("big_seed"))
+        {
+            counter += 100;
+            Debug.Log("level complete");
+            SceneManager.LoadScene("Info_scene");
+        }
+
         PlayerPrefs.SetString("finalcount", counter.ToString());
     }
 
