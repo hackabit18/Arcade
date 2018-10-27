@@ -15,7 +15,7 @@ public class Seed_score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score = GameObject.Find("Bolchie - Basic 1").GetComponent<Demo>().counter;
+        score = GameObject.Find("Player").GetComponent<Demo>().counter;
         Score_text.text = "Seeds: " + score.ToString();
 
     }

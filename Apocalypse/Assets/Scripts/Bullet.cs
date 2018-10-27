@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("enemy dead");
             Destroy(gameObject);
-            //GameObject.Find("Bolchie - Basic 1").GetComponent<Demo>().counter += 50;
+            GameObject.Find("Player").GetComponent<Demo>().counter += 50;
 
         }
         if (collider.gameObject.CompareTag("bush"))

@@ -15,7 +15,7 @@ public class Demo : MonoBehaviour {
     public GameObject Bullet;
     public int counter = 0;
     //variable for how fast player runs//
-    private float speed = 5f;
+    private float speed = 8f;
     public Vector3 position;
     private bool facingRight = true;
 	private Animator anim;
@@ -29,7 +29,7 @@ public class Demo : MonoBehaviour {
 
     //variable for how high player jumps//
     [SerializeField]
-	private float jumpForce = 300f;
+	private float jumpForce = 200f;
 
 	public Rigidbody2D rb { get; set; }
 
