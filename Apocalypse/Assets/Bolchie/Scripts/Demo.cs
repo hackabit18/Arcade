@@ -49,7 +49,7 @@ public class Demo : MonoBehaviour {
 		HandleInput ();
         position = transform.position;
         position.x = Mathf.Clamp(position.x, Xminvalue, position.x);
-        position.y = Mathf.Clamp(position.y, -3.6f, 4.98f);
+        position.y = Mathf.Clamp(position.y, -3.69f, 3.1f);
         transform.position = position;
 
     }
