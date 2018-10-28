@@ -12,6 +12,10 @@ public class Pause_panel_menu : MonoBehaviour
     }
     public void MainMenu()
     {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
         SceneManager.LoadScene("Chapters_scene");
     }
     public void Restart()
