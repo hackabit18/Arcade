@@ -9,9 +9,9 @@ HOW TO RUN:
 <br>Clone this github repo , find the Exe.rar , extract it , find Apocalypse.exe and hit play.  </br>
 
 BRIEF DESCRIPTION: 
-<li><br>Currrently it contains two chapters Forest and Cityscape.</br></li> 
-<li><br>Player controls: arrow keys for movement  , space for jump , left alt to shoot.</br></li>
-<li><br>enemies and obstacles need to be killed and avoided to increament the score. Also, collectible items need to be collected for the same.</br></li>
+<li>Currrently it contains two chapters Forest and Cityscape.</li> 
+<li>Player controls: arrow keys for movement  , space for jump , left alt to shoot.</li>
+<li>enemies and obstacles need to be killed and avoided to increament the score. Also, collectible items need to be collected for the same.</li>
 
 FUTURE SCOPE: 
 <br>adding audio , running it on any android device and further chapters' creation.</br>
