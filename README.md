@@ -12,7 +12,7 @@ BRIEF DESCRIPTION:
 <li>Currrently it contains two chapters Forest and Cityscape.</li> 
 <li>Player controls: arrow keys for movement  , space for jump , left alt to shoot.</li>
 <li>enemies and obstacles need to be killed and avoided to increament the score. Also, collectible items need to be collected for the same.</li>
-
+<br>
 FUTURE SCOPE: 
 <br>adding audio , running it on any android device and further chapters' creation.</br>
 
