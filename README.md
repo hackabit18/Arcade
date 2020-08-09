@@ -15,6 +15,6 @@ BRIEF DESCRIPTION:
 <br>
 FUTURE SCOPE: 
 <br>adding audio , running it on any android device and further chapters' creation.</br>
-
+<br>
 COPYRIGHT INFO:
 <br>This game is copyright to the creators and should not be published as a commercial product.</br>
